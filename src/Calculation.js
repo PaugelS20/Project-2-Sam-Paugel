@@ -1,8 +1,10 @@
 import './App.css';
 
-export const Calculation = () => {
+export const Calculation = ({firstNumber, secondNumber}) => {
   return (
-   <h1>Hello World!</h1> 
+   <h1> 
+   {firstNumber + secondNumber}
+   </h1> 
   );
 }
 
