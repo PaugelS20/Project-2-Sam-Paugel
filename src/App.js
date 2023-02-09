@@ -1,25 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
+import { Calculation } from './Calculation';
 
-function App() {
+export const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <>
+    <Calculation firstNumber={1} secondNumber={18}/>
+    <Calculation firstNumber={30} secondNumber={100}/>
+    <Calculation firstNumber={7} secondNumber={3.5}/>
+   </>
   );
 }
 
-export default App;
