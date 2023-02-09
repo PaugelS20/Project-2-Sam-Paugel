@@ -12,7 +12,7 @@ export const Darkmode = () => {
         }, [theme]);
     return (
         <div className={`App ${theme}`}>
-            <button className='btn btn-secondary' onClick={toggleTheme}>Toggle Dark Mode</button>
+            <button className={`btn btn-outline-secondary ${theme}`} onClick={toggleTheme}>Toggle Dark Mode</button>
         </div>
   )
 }
