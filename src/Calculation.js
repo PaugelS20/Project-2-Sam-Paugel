@@ -1,10 +1,25 @@
 import './App.css';
 
-export const Calculation = ({firstNumber, secondNumber}) => {
+export const Calculation = ({firstNumber, secondNumber, groupNumber}) => {
   return (
-   <h1> 
-    {firstNumber} + {secondNumber} = {firstNumber + secondNumber}
-   </h1> 
+    <>
+        <h2>Group {groupNumber}</h2>
+        <h3>
+            {firstNumber} + {secondNumber} = {firstNumber + secondNumber}
+        </h3>
+        
+        <h3> 
+            {firstNumber} - {secondNumber} = {firstNumber - secondNumber}
+        </h3>
+
+        <h3> 
+            {firstNumber} * {secondNumber} = {firstNumber * secondNumber}
+        </h3>
+
+        <h3> 
+            {firstNumber} / {secondNumber} = {firstNumber / secondNumber}
+        </h3>
+    </>
   );
 }
 
